@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Hello World PDF</title>
+    
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+
+        @font-face {
+            font-family: sonarbangla2;
+            src: url('font/bangla5.woff');
+        }
+
+
+        #myInput {
+            background-image: url(images/searchicon.png);
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+            border-radius: 30px;
+        }
+
+        .center2 {
+            font-family: sonarbangla2;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            background: bisque;
+            padding: 5px;
+            border-radius: 30px;
+        }
+
+        #myUL {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #myUL li a {
+            text-align: center;
+            margin-top: 10px;
+            border-radius: 30px;
+            border: 1.5px solid #bebfa4;
+            background-color: #eeeeee87;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #323131;
+            display: block;
+        }
+
+        #myUL li a:hover:not(.header) {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center2">
+        <center>
+            <h2>Hello World PDF</h2>
+        </center>
+    </div>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search For your PDF"
+        title="Type in a name">
+
+    <ul id="myUL">
+        <li><a href="Dhaka.html">ঢাকা</a></li>
+        <li><a href="Tangail.html">টাঙ্গাইল</a></li>
+        <li><a href="Gazipur.html">গাজীপুর</a></li>
+        <li><a href="Gopalganj.html">গোপালগঞ্জ</a></li>
+        <li><a href="Kishoreganj.html">কিশোরগঞ্জ</a></li>
+        <li><a href="Madaripur.html">মাদারীপুর</a></li>
+        <li><a href="Munshiganj.html">মুন্সীগঞ্জ</a></li>
+        <li><a href="Narayanganj.html"> নারায়ণগঞ্জ </a></li>
+        <li><a href="Narsingdi.html"> নরসিংদী </a></li>
+        <li><a href="Rajbari.html">রাজবাড়ী</a></li>
+        <li><a href="Shariatpur.html">শরীয়তপুর</a></li>
+        <li><a href="Faridpur.html">ফরিদপুর</a></li>
+        <li><a href="Dinajpur.html">দিনাজপুর</a></li>
+        <li><a href="Gaibandha.html">গাইবান্ধা</a></li>
+        <li><a href="Kurigram.html">কুড়িগ্রাম</a></li>
+        <li><a href="Lalmonirhat.html">লালমনিরহাট</a></li>
+        <li><a href="Nilphamari.html">নীলফামারী</a></li>
+        <li><a href="Panchagarh.html">পঞ্চগড়</a></li>
+        <li><a href="Thakurgaon.html">ঠাকুরগাঁও</a></li>
+        <li><a href="Rangpur.html">রংপুর</a></li>
+        <li><a href="Pabna.html">পাবনা</a></li>
+        <li><a href="Bogura.html">বগুড়া</a></li>
+        <li><a href="Joypurhat.html">জয়পুরহাট</a></li>
+        <li><a href="ChapaiNawabganj.html">চাপাই নবাবগঞ্জ</a></li>
+        <li><a href="Naogaon.html">নওগাঁ</a></li>
+        <li><a href="Natore.html">নাটোরে</a></li>
+        <li><a href="Sirajganj.html">সিরাজগঞ্জ</a></li>
+        <li><a href="Rajshahi.html">রাজশাহী</a></li>
+        <li><a href="Moulvibazar.html">মৌলভীবাজার</a></li>
+        <li><a href="Habiganj.html">হবিগঞ্জ</a></li>
+        <li><a href="Sunamganj.html">সুনামগঞ্জ</a></li>
+        <li><a href="Sylhet.html">সিলেট</a></li>
+        <li><a href="Jamalpur.html">জামালপুর</a></li>
+        <li><a href="Netrokona.html">নেত্রকোনা</a></li>
+        <li><a href="Sherpur.html">শেরপুর</a></li>
+        <li><a href="Mymensingh.html">ময়মনসিংহঃ</a></li>
+        <li><a href="Barishal.html">বরিশাল</a></li>
+        <li><a href="Bhola.html">ভোলা</a></li>
+        <li><a href="Jhalokati.html">ঝালকাঠী</a></li>
+        <li><a href="Patuakhali.html">পটুয়াখালী</a></li>
+        <li><a href="Pirojpur.html">পিরোজপুর</a></li>
+        <li><a href="Barguna.html">বরগুনা</a></li>
+        <li><a href="Chandpur.html">চাঁদপুর</a></li>
+        <li><a href="Bandarban.html">বান্দরবান</a></li>
+        <li><a href="Brahmanbaria.html">ব্রাহ্মণবাড়িয়া</a></li>
+        <li><a href="Cumilla.html">কুমিল্লা</a></li>
+        <li><a href="CoxsBazar.html">কক্সবাজার</a></li>
+        <li><a href="Feni.html">ফেনী</a></li>
+        <li><a href="Khagrachhari.html">খাগড়াছড়ি</a></li>
+        <li><a href="Lakshmipur.html">লক্ষ্মীপুর</a></li>
+        <li><a href="Noakhali.html">নোয়াখালী</a></li>
+        <li><a href="Rangamati.html">রাঙামাটি</a></li>
+        <li><a href="Chattogram.html">চট্টগ্রাম</a></li>
+        <li><a href="Bagerhat.html">বাগেরহাট</a></li>
+        <li><a href="Jashore.html">যশোর</a></li>
+        <li><a href="Chuadanga.html">চুয়াডাঙ্গা</a></li>
+        <li><a href="Jhenaidah.html">ঝিনাইদহ</a></li>
+        <li><a href="Kushtia.html">কুষ্টিয়া</a></li>
+        <li><a href="Magura.html">মাগুরা</a></li>
+        <li><a href="Meherpur.html">মেহেরপুর</a></li>
+        <li><a href="Narail.html">নড়াইল</a></li>
+        <li><a href="Satkhira.html">সাতক্ষীরা</a></li>
+        <li><a href="Khulna.html">খুলনা</a></li>
+    </ul>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+<!-- Mirrored from www.mosharraf-karim.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jun 2022 17:11:40 GMT -->
+
+</html>
