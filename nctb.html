@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Hello World NCTB File Share</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        @font-face {
+            font-family: sonarbangla2;
+            src: url('font/bangla5.woff');
+        }
+
+
+        #myInput {
+            background-image: url(images/searchicon.png);
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+            border-radius: 30px;
+        }
+
+        .center2 {
+            font-family: sonarbangla2;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            background: bisque;
+            padding: 5px;
+            border-radius: 30px;
+        }
+
+        #myUL {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #myUL li a {
+            text-align: center;
+            margin-top: 10px;
+            border-radius: 30px;
+            border: 1.5px solid #bebfa4;
+            background-color: #eeeeee87;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #323131;
+            display: block;
+        }
+
+        #myUL li a:hover:not(.header) {
+            background-color: #eee;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+  font-size: 36px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+menu {
+  --size: 1.5rem;
+  --radius: 6rem;
+  --padding: 1rem;
+  --bg-color: rgba(255, 255, 255, 0.9);
+  --fg-color: rgba(0, 0, 0, 0.7);
+  --hi-color: #000000;
+  
+  position: fixed;
+  bottom: var(--padding);
+  right: var(--padding);
+}
+
+menu > * {
+  position: absolute;
+  
+  display: grid;
+  place-content: center;
+  
+  border-radius: 100%;
+  
+  background: var(--bg-color);
+  color: var(--fg-color);
+  
+  text-decoration: none;
+  
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.6);
+}
+
+menu > .action {
+  --factor: 0;
+  
+  width: var(--size);
+  height: var(--size);
+  right: calc(0.35 * var(--size));
+  bottom: calc(0.35 * var(--size));
+  
+  opacity: 0;
+  
+  transform: rotate(calc(-1 * var(--angle))) translateY(calc(-1 * var(--radius) * var(--factor))) rotate(var(--angle));
+  
+  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out, box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+menu > .action:hover, menu > .trigger:hover {
+  color: var(--hi-color);
+  box-shadow: 0px 0px 0px 0.35rem rgba(0, 0, 0, 0.2);
+}
+
+menu.open > .action {
+  --factor: 1;
+  
+  opacity: 1;
+}
+
+menu > .action:nth-child(1) {
+  --angle: 0deg;
+  transition-delay: 0ms;
+}
+
+menu > .action:nth-child(2) {
+  --angle: 30deg;
+  transition-delay: 50ms;
+}
+
+menu > .action:nth-child(3) {
+  --angle: 60deg;
+  transition-delay: 100ms;
+}
+
+menu > .action:nth-child(4) {
+  --angle: 90deg;
+  transition-delay: 150ms;
+}
+
+menu > .trigger {
+  width: calc(1.6 * var(--size));
+  height: calc(1.6 * var(--size));
+  bottom: 0;
+  right: 0;
+  
+  font-size: 2rem;
+  transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+menu > .trigger > i {
+  transition: transform 250ms ease-in-out;
+}
+
+menu.open > .trigger > i {
+  transform: rotate(-135deg);
+}
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="center2">
+        <center>
+            <h2>Hello World NCTB File Share</h2>
+        </center>
+    </div>
+
+
+    <menu>
+        <a href="https://forms.gle/uAgKkkZcf8Xkfoef8" class="action"><i class="fa fa-upload"></i></a>
+        <a href="#" class="action"><i class="fa fa-book"></i></a>
+        <a href="https://github.com/Hello-World-BD/Hello-World-File-Share/issues" class="action"><i class="fa fa-bug"></i></a>
+        <a href="index.html" class="action"><i class="fa fa-home"></i></a>
+        <a href="#" class="trigger"><i class="fas fa-plus"></i></a>
+      </menu>
+
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search For your PDF" title="Type in a name">
+
+
+
+
+    <ul id="myUL">
+        <li><a href="documentry.html">Documentry</a></li>
+        <li><a href="coding.html">Coding</a></li>
+        <li><a href="ethicalhacking.html">Ethical Hacking</a></li>
+        <li><a href="nctb.html">National Curriculum BD</a></li>
+        <li><a href="foreign.html">Foreign Curriculum</a></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+
+<script>
+    const trigger = document.querySelector("menu > .trigger");
+trigger.addEventListener('click', (e) => {
+  e.currentTarget.parentElement.classList.toggle("open");
+});
+</script>
+
+
+</body>
+
+
+
+</html>
