@@ -1,0 +1,15 @@
+{
+  "background_color": "black",
+  "description": "Share and Receive files anonymously.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "file-sharing.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Hello World File Share - BD",
+  "short_name": "File Share",
+  "start_url": "index.html"
+}
